@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*tag selector*/
+    body{
+        background-color: #333;
+        color: white;
+        width: 360px;
+    }
+    p{
+        background-color: rgb(175, 18, 18);
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 10px;
+    }
+    /*clas selector denumiti clasele cu: a..zA..Z0..9-_
+    sa nu se inceapa cu o cifra 
+    {bem css}-idei de denumire class*/
+    .row{
+       background-color:green;
+    }
+    .col{
+      border-radius: 100px;
+    }
+    /* ID selector*/
+    #first{
+        border-radius: 100px 0 0 0;
+
+    }
+    #lest{
+        border-radius: 0 0 100px 0;
+    }
+    .color{
+        background-color: blue;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <p id="first">1</p>
+    <p class="col">2</p>
+    <p>3</p>
+    <p class="row">4</p>
+    <p class="row col color">5</p>
+    <p class="row">6</p>
+    <p>7</p>
+    <p class="col ro">8</p>
+    <p id="lest">9</p>
+</body>
+</html>
