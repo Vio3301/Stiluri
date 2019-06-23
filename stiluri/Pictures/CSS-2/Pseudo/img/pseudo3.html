@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #submenu{
+        opacity: 0;
+        transition: 0.3s;
+        background-color: white
+
+    }
+    #submenu:target{
+        opacity: 1;
+
+    }
+    ul{
+       margin: 0;
+       padding: 0;
+    
+    }
+    li{
+        list-style: none;
+        
+    }
+    a{
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        
+        
+    }
+    ul:not(submenu){
+        /* background-color: turquoise; */
+        width: 200px;
+        text-align: right;
+           
+    }
+   #settings{
+       background-color: wheat;
+       padding: 10px;
+       display: block;
+   }
+   span{
+    display: block;
+    width: 5.5px;
+    float: right;
+    line-height: 7px;
+   }
+   a:not(setttings){
+       padding-right: 14px;
+   }
+
+    </style>
+</head>
+<body>
+    <h1>Dropdown menu</h1>
+    <ul>
+        <li><a href="#submenu" id="settings">settings <span>&#8226; &#8226; &#8226;</span></a>
+         <ul id="submenu">
+             <li><a href="">Account</a></li>
+             <li><a href="">Privacy</a></li>
+             <li><a href="">Reports</a></li>
+         </ul>
+        </li>
+    </ul>
+
+
+
+</body>
+</html>
