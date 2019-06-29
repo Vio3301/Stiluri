@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: grey;
+
+    }
+    #carosel{
+        
+        width: 80%;
+        margin: auto;
+        margin-top: 150px;
+
+    }
+    .slide{
+        
+        border: 1px dotted blue;
+        float: left;
+        border: none;
+    }
+    .slide:last-child{
+       width: 30%;
+       text-align: right;
+       padding-top:3%;
+       
+    }
+    .slide:first-child{
+        width: 30%;
+        text-align: left;
+        padding-top: 3%;
+       
+    }
+    .slide:nth-child(2){
+        width: 40%;
+        
+    }
+    .img-first{
+       width: 80%;
+       transform:translateX(30%);
+       box-shadow: 1px 1px 1px 2px black;
+       border-radius: 10px;
+    }
+   .img-center{
+       width: 100%;
+       transform: translateX(0%);
+       box-shadow: 1px 1px 6px 3px black;
+       border-radius: 10px;
+     }
+   .img-last{
+       width: 80%;
+       transform: translateX(-30%);
+       position: relative;
+       z-index: -1;
+       box-shadow: 1px 1px 1px 2px black;
+       border-radius: 10px;
+   }
+   .in{
+       padding-top: 300px;
+       padding-left: 748px
+   }
+   a{
+       text-decoration: none;
+       color: white;
+       padding:10px;
+       font-size: 35px;
+       display: block;
+       float: left;
+   }
+   a:hover{
+       color:red;
+   }
+  
+
+
+    </style>
+</head>
+<body>
+ <div id="carosel">
+  <div id="slides">
+    <div class="slide"><img class="img-first" src="../img/626-600x300.jpg" alt=""></div>
+    <div class="slide"><img class="img-center" src="../img/656-600x300.jpg" alt=""></div>
+    <div class="slide"><img class="img-last" src="../img/676-600x300.jpg" alt=""></div>
+  </div>
+ </div>
+ <div class="in">
+     <a href="">&#9679;</a>
+     <a href="">&#9679;</a>
+     <a href="">&#9679;</a>
+ </div>
+</body>
+</html>
+<!-- timpanus.net -->
