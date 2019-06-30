@@ -15,18 +15,15 @@
        .dexter{
            height: 360px;
            width: 480px;
-           background-image: url(img1/61-480x360.jpg);
-           
-          
-          
+           background-image: url(img1/61-480x360.jpg);   
        }
        h2{
            font-weight: 100;
+           margin-left: 20px;
        }
        strong{
            font-weight: bold;
        }
-       /* de facut bagraundu  https://tympanus.net/Development/HoverEffectIdeas/ si sa facem sa se alinieze textele */
        .overlay{
            background-color: #0006;
            height: 280px;
@@ -36,6 +33,18 @@
        p{
            border: 7px solid white;
            padding: 15px;
+           margin-top: -80px;
+           color: transparent;
+           transition: 0.5s;
+       }
+       p:hover{
+           margin-top: 0;
+           color:white;
+           
+       }
+       .overlay:hover{
+        background-color: #0004;
+        transition: 0.5s;
        }
 
 
