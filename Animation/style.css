@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+    background-image: radial-gradient(#333 50%,#222,#777 55%);
+    background-size: 20px 20px;
+}
+#box{
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(transparent 68%,#333 70%);
+    position: absolute;
+}
+#box ul{
+   background-image: radial-gradient();
+    position: absolute;
+    width: 380px;
+    height: 380px;
+
+}
+#box li{
+    position: absolute;
+    transform-origin: 190px 30px;
+    
+    
+    
+}
+#box li:last-child{
+    background-image: radial-gradient(rgb(43, 15, 15),rgb(122, 51, 51));
+    width: 80px;
+    height: 80px;
+   
+}
+i{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+#box li i:last-child{
+    position: absolute;
+}
+#box li:not(:last-child){
+    width: 150px;
+    height: 60px;
+    top: 160px;
+    background-image: radial-gradient(at bottom, transparent 50%, #999 41% ,#555 80%);
+    border-radius: 60% 10% 0  0;
+
+}
+#box li:nth-child(1){
+    transform: rotate(0deg)
+}
+#box li:nth-child(2){
+    transform: rotate(60deg)
+}
+#box li:nth-child(3){
+    transform: rotate(120deg)
+}
+#box li:nth-child(4){
+    transform: rotate(180deg)
+}
+#box li:nth-child(5){
+    transform: rotate(240deg)
+}
+#box li:nth-child(6){
+    transform: rotate(300deg)
+}
+/* animatie css */
+@keyframes rotate-fan{
+   from{
+       transform: rotate(0deg)
+   }
+   to{
+       transform: rotate(360deg)
+   }
+}
+#box ul{
+    animation: rotate-fan 0.6s linear infinite;
+}
+
+
+
+
+.center{
+    /* Centrat Absolut */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 1000px;
+}

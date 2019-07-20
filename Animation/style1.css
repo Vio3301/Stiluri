@@ -1,0 +1,70 @@
+body{
+    background-image: radial-gradient(#6b5ab4 50%,#222,#777 55%);
+    background-size: 10px 10px;
+}
+header{
+    width: 850px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    text-shadow: 10px 10px 0px #222d;
+    animation: shadow 3s infinite;
+    animation-direction: alternate;
+}
+.light{
+    
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background-image: radial-gradient(at left,white,transparent,#2228);
+    background-size:2000px 2000px;
+    top: -1000px;
+    left: 0;
+    animation: slide 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide{
+    from{
+        top:-1000px
+    }
+    to{
+        top:0;
+    }
+}
+@keyframes shadow{
+    from{
+        text-shadow: 10px 10px 0px #222d;
+    }
+    to{
+        text-shadow: 10px -10px 0px #222d;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center{
+    /* Centrat Absolut */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+   
+}
